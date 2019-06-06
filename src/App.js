@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Hello Openshift, Version 3
+          Hello Openshift, Version 4
         </p>
         <a
           className="App-link"
