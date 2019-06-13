@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Start XLR Release') {
       steps{
-        xlrCreateRelease serverCredentials: 'admin', template: 'Modulo Tributario/Motor tributario Release', releaseTitle: 'Release for $BUILD_TAG', variables: [[propertyName: 'VERSION', propertyValue: '$BUILD_NUMBER.0'], [propertyName: 'SERVICE_NOW_SYSID', propertyValue: 'dummy']], startRelease: true
+        xlrCreateRelease serverCredentials: 'admin', template: 'Samples/Motor tributario Release', releaseTitle: 'Release for $BUILD_TAG', variables: [[propertyName: 'VERSION', propertyValue: '$BUILD_NUMBER.0'], [propertyName: 'SERVICE_NOW_SYSID', propertyValue: 'dummy']], startRelease: true
       }
     }
   }
